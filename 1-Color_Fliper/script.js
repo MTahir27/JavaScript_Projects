@@ -8,6 +8,9 @@ const bgChangeBtn = document.getElementById('bgChangeBtn');
 const color = document.getElementById('color');
 
 bgChangeBtn.addEventListener("click", function () {
-    mainSection.style.background = bgColor[1];
-    color.innerText = bgColor[1];
+    totalColor = bgColor.length;
+    const colorIndex = Math.floor(Math.random() * totalColor);
+
+    mainSection.style.background = bgColor[colorIndex];
+    color.innerText = bgColor[colorIndex];
 });
