@@ -25,6 +25,39 @@ a {
 /* body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+.btn {
+    border: none;
+    background-color: rgb(225 225 225 / 25%);
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #e1e1e1;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgb(225 225 225 / 25%);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: .3s all;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0px;
+    right: auto;
 }
 
 /* Navbar Styling */
@@ -61,8 +94,10 @@ nav {
     height: 100vh;
     background-color: royalblue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .color-div {
@@ -75,4 +110,5 @@ nav {
 #color {
     color: #000;
     margin-left: 5px;
+    font-weight: 700;
 }
