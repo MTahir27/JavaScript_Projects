@@ -12,7 +12,7 @@
     <h1>Here is the JavaScript Project Links:</h1>
     <ul>
         <li>
-            <a href="1-Color_Fliper/index.html">Color Filper</a>
+            <a href="1-Color_Fliper/index.html">Color Fliper</a>
         </li>
     </ul>
 </body>
