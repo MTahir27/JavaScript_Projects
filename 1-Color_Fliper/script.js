@@ -13,21 +13,33 @@ const hexColor = document.getElementById('hexColor');
 // Change Color Button Selected by ID
 const bgChangeBtn = document.getElementById('bgChangeBtn');
 
+let a = 1;
+colorName.onclick = function () {
+    a = 1;
+}
+hexColor.onclick = function () {
+    a = 2;
+};
+
 
 bgChangeBtn.addEventListener("click", function () {
-    // totalColor = bgColor.length;
-    // const colorIndex = Math.floor(Math.random() * totalColor);
-    // mainSection.style.background = bgColor[colorIndex];
-    // color.innerText = bgColor[colorIndex];
-
-    totalHexColor = bgHexColor.length;
-    hexColorName = Math.floor(Math.random() * totalHexColor);
-    let hex = '#';
-    let i = 0;
-    for (i = 0; i < 6; i++) {
-        hexColorIndex = Math.floor(Math.random() * totalHexColor);
-        hex = hex + bgHexColor[hexColorIndex];
+    if (a == 1) {
+        totalColor = bgColor.length;
+        const colorIndex = Math.floor(Math.random() * totalColor);
+        mainSection.style.background = bgColor[colorIndex];
+        color.innerText = bgColor[colorIndex];
+    } else if (a == 2) {
+        totalHexColor = bgHexColor.length;
+        hexColorName = Math.floor(Math.random() * totalHexColor);
+        let hex = '#';
+        let i = 0;
+        for (i = 0; i < 6; i++) {
+            hexColorIndex = Math.floor(Math.random() * totalHexColor);
+            hex = hex + bgHexColor[hexColorIndex];
+        }
+        mainSection.style.background = hex;
+        color.innerText = hex;
+    } else {
+        console.log(a);
     }
-    mainSection.style.background = hex;
-    color.innerText = hex;
 });
