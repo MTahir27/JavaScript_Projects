@@ -40,3 +40,9 @@ const clientReviews = [{
         message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquam cumque corrupti beatae illum non quae fugiat facilis aut modi nihil, maiores inventore laborum perferendis distinctio.Nisi aliquid repudiandae iure!"
     },
 ];
+
+// Get Element
+const reviewImg = document.getElementById('reviewImg');
+const reviewName = document.getElementById('name');
+const reviewJob = document.getElementById('job');
+const reviewMessage = document.getElementById('message');
