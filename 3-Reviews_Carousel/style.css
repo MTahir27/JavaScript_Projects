@@ -162,7 +162,7 @@ button:hover {
     color: var(--primarycolor);
 }
 
-#random-btn {
+#randomBtn {
     font-size: 1rem;
     padding: 10px 20px;
     text-transform: capitalize;
