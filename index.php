@@ -10,14 +10,14 @@
 
 <body>
     <h1>Here is the JavaScript Project Links:</h1>
-    <ul>
+    <ol>
         <li>
             <a href="1-Color_Fliper">Color Fliper</a>
         </li>
         <li>
             <a href="2-Counter">Counter</a>
         </li>
-    </ul>
+    </ol>
 </body>
 
 </html>
