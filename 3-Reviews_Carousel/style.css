@@ -27,6 +27,26 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-size: 2rem;
+    color: var(--primarycolor);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+h1::before {
+    content: '';
+    width: 50%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--primarycolor);
+    position: absolute;
+    bottom: -10px;
+    left: calc(25%);
+}
+
 .review-div {
     width: 100%;
     max-width: 400px;
