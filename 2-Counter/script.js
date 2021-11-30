@@ -18,9 +18,15 @@ btnGroup.forEach(function (btn) {
         } else {
             counterNumber = 0;
         }
-
+        // Pass value to Counter Div
         counter.innerText = counterNumber;
-
+        if (counterNumber > 0) {
+            counter.style.color = "green";
+        } else if (counterNumber < 0) {
+            counter.style.color = "red";
+        } else {
+            counter.style.color = "black";
+        }
 
     };
 });
