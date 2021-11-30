@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--gray);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -36,25 +37,31 @@ body {
 }
 
 .review-img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     position: relative;
     margin: auto;
     z-index: 2;
+    margin-bottom: 10px;
 }
 
 .review-img::before {
     background-color: var(--primarycolor);
-    top: 0px;
-    left: 10px;
+    top: -10px;
+    left: -5px;
     position: absolute;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    content: '';
+    content: "\f6b0";
     z-index: 1;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "bootstrap-icons";
+    font-size: 1.5rem;
+    color: var(--white);
 }
 
 .review-img::after {
