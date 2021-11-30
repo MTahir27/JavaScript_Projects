@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     font-size: 2.5rem;
 }
 
 .container {
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
