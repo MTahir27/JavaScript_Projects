@@ -17,6 +17,9 @@
         <li>
             <a href="2-Counter">Counter</a>
         </li>
+        <li>
+            <a href="3-Reviews_Carousel">Reviews Carousel</a>
+        </li>
     </ol>
 </body>
 
