@@ -20,6 +20,9 @@
         <li>
             <a href="3-Reviews_Carousel">Reviews Carousel</a>
         </li>
+        <li>
+            <a href="4-Responsive_Navbar">Responsive Navbar</a>
+        </li>
     </ol>
 </body>
 
