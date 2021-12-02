@@ -47,6 +47,7 @@ nav {
     align-items: center;
     list-style-type: none;
     height: 100%;
+    transition: .5s all ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -54,6 +55,7 @@ nav {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    font-size: 1rem;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
