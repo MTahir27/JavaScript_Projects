@@ -8,6 +8,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     background-color: #f9f9f9;
+    transition: .3s all ease-in-out;
+    padding: 20px;
 }
 
 .sidebar {
@@ -19,10 +21,11 @@ body {
     height: 100%;
     overflow: hidden;
     overflow-y: auto;
-    /* transform: translate(-100%); */
+    transform: translate(-100%);
+    transition: .3s all ease-in-out;
 }
 
-.show-sidebar {
+.sidebar-show {
     transform: translate(0);
 }
 
