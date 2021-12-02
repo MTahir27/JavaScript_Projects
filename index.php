@@ -23,6 +23,9 @@
         <li>
             <a href="4-Responsive_Navbar">Responsive Navbar</a>
         </li>
+        <li>
+            <a href="5-Sidebar">Sidebar</a>
+        </li>
     </ol>
 </body>
 
