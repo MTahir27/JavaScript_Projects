@@ -7,4 +7,38 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.close-btn {
+    max-width: 20px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.close-btn:hover {
+    transform: rotate(360deg);
 }
