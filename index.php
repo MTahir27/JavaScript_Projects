@@ -26,6 +26,9 @@
         <li>
             <a href="5-Sidebar">Sidebar</a>
         </li>
+        <li>
+            <a href="6-Model">Model</a>
+        </li>
     </ol>
 </body>
 
