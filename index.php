@@ -29,6 +29,9 @@
         <li>
             <a href="6-Model">Model</a>
         </li>
+        <li>
+            <a href="7-FAQ_Page">FAQ Page</a>
+        </li>
     </ol>
 </body>
 
