@@ -3,3 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
