@@ -38,6 +38,7 @@ captchaBtn.onclick = function () {
         result.style.color = "green";
         result.innerText = "Congratulation You Solve Captcha";
         captchaInput.value = "";
+        regeneratecaptcha();
     } else {
         result.style.color = "red";
         result.innerText = "You Fail, Please Try Again";
