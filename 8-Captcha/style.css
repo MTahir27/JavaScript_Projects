@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
 }
 
 main {
@@ -36,7 +37,7 @@ main {
     margin-bottom: 10px;
 }
 
-.captcha-div .captcha-token {
+.captcha-div p {
     margin-bottom: 10px;
 }
 
@@ -46,11 +47,37 @@ main {
     outline: none;
 }
 
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
 .submit-btn {
     width: 100%;
     padding: 10px;
     background-color: #D8644F;
     color: #fff;
     border: none;
-    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.reloadCaptcha {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    padding: 5px;
+    border: none;
+    background-color: #D8644F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.reloadCaptcha img {
+    width: 100%;
 }

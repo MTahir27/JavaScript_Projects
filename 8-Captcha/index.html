@@ -28,8 +28,12 @@
             </div>
             <form>
                 <input type="text" class="captcha-input" placeholder="Enter Captcha Code">
-                <input type="submit" value="Submit" class="submit-btn">
-                <input type="button" class="reloadCaptcha" value="Reload">
+                <div class="btn-group">
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <button type="button" class="reloadCaptcha" title="Reload Captcha">
+                        <img src="images/reload.png" alt="Reload Btn">
+                    </button>
+                </div>
             </form>
             <p class="result"></p>
         </div>
