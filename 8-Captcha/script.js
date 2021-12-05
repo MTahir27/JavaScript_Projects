@@ -1,24 +1,13 @@
-// const amount = document.getElementById('amount');
+const captcha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// const submit = document.getElementById("submit");
+console.log(captcha);
 
-// const result = document.getElementById("result");
+let captcahValue;
 
-// document.onsubmit = function (event) {
-//     event.preventDefault();
-// }
+for (let i = 0; i <= 5; i++) {
+    const captchaDigit = Math.floor(Math.random() * captcha.length);
+    captcahValue = captchaDigit;
+    captcahValue = captcha[captcahValue];
 
-
-// submit.onclick = function () {
-//     const value = amount.value;
-//     console.log(value);
-
-//     if (value < 50000) {
-//         const tex = (value * 11) / 100;
-//         result.innerText = "Your Total Amount After 11% text deduction is " + tex;
-
-//     } else {
-//         const tex = (value * 16) / 100;
-//         result.innerText = "Your Total Amount After 16% text deduction is " + tex;
-//     }
-// }
+}
+console.log(captcahValue);
