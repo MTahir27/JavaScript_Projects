@@ -1,13 +1,26 @@
-const captcahCode = document.querySelector('.captcha-token');
+const captchaCode = document.querySelector('.captcha-token');
+const captchaInput = document.querySelector('.captcha-input');
+const captchaBtn = document.querySelector('.submit-btn');
+const result = document.querySelector(".result");
+
 const captcha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let captcahValue = '';
 
 for (let i = 0; i <= 5; i++) {
     const captchaDigit = Math.floor(Math.random() * captcha.length);
-    // captcahValue = captchaDigit;
-    // console.log(captcha[captcahValue]);
     captcahValue = captcahValue + captcha[captchaDigit];
 }
 
-captcahCode.innerText = captcahCode.innerText + captcahValue;
+captchaCode.innerText = captchaCode.innerText + captcahValue;
+
+captchaBtn.onclick = function () {
+    event.preventDefault();
+    if (captchaInput.value == captcahValue) {
+        result.style.color = "green";
+        result.innerText = "Congratulation You Solve Captcha";
+    } else {
+        result.style.color = "red";
+        result.innerText = "You Fail, Please Try Again";
+    }
+}
