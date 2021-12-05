@@ -32,6 +32,9 @@
         <li>
             <a href="7-FAQ_Page">FAQ Page</a>
         </li>
+        <li>
+            <a href="8-Captcha">Captcha</a>
+        </li>
     </ol>
 </body>
 
