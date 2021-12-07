@@ -1,9 +1,10 @@
 const menuContainer = document.querySelector('.menu');
+const btns = document.querySelectorAll('.btn');
 
 const menuData = [{
         id: 1,
         name: 'Product No 1',
-        catagoey: "Lunch",
+        catagoey: "lunch",
         image: "images/img-1.jpg",
         title: "Lunch Image",
         price: 100,
@@ -30,7 +31,7 @@ const menuData = [{
     {
         id: 4,
         name: 'Product No 3',
-        catagoey: "Lunch",
+        catagoey: "lunch",
         image: "images/img-4.jpg",
         title: "Lunch Image",
         price: 150,
@@ -48,7 +49,7 @@ const menuData = [{
     {
         id: 6,
         name: 'Product No 6',
-        catagoey: "Dinner",
+        catagoey: "dinner",
         image: "images/img-6.jpg",
         title: "Dinner Image",
         price: 120,
@@ -66,7 +67,7 @@ const menuData = [{
     {
         id: 8,
         name: 'Product No 8',
-        catagoey: "Dinner",
+        catagoey: "dinner",
         image: "images/img-8.jpg",
         title: "Dinner Image",
         price: 100,
@@ -113,5 +114,24 @@ function menuProducts(menuProductList) {
     });
     menu = menu.join('');
     menuContainer.innerHTML = menu;
-    console.log(menu);
 }
+
+btns.forEach(function (btn) {
+    btn.onclick = function (e) {
+        const catagoery = e.currentTarget.dataset.catagory;
+        console.log(catagoery);
+        const catagoeyItems = menuData.filter(function (catagoeryItem) {
+            if (catagoeryItem.catagoey === catagoery) {
+                return catagoeryItem;
+            }
+        });
+        // console.log(catagoeyItems);
+        if (catagoery === "all") {
+            menuProducts(menuData);
+        } else {
+            menuProducts(catagoeyItems);
+        }
+
+
+    }
+});
