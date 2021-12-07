@@ -1,9 +1,10 @@
-const menu = [{
+const menuData = [{
         id: 1,
         name: 'Product No 1',
         catagoey: "Lunch",
         image: "images/img-1.jpg",
         title: "Lunch Image",
+        price: 100,
         disription: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non voluptatum reprehenderit consequuntur iste accusantium vel saepe tempore facilis officiis!",
     },
     {
@@ -12,6 +13,7 @@ const menu = [{
         catagoey: "dinner",
         image: "images/img-2.jpg",
         title: "dinner Image",
+        price: 200,
         disription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat expedita vel dolorum in eos! Est, doloribus! Illo ratione obcaecati temporibus aspernatur recusandae quod, cupiditate nisi!",
     },
     {
@@ -20,6 +22,7 @@ const menu = [{
         catagoey: "breakfast",
         image: "images/img-3.jpg",
         title: "breakfast Image",
+        price: 300,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro minima fuga? Aliquid suscipit id dolorum consectetur eos voluptatum vel cum, officiis quaerat temporibus molestias, voluptate quisquam! Maxime, quisquam nihil.",
     },
     {
@@ -28,6 +31,7 @@ const menu = [{
         catagoey: "Lunch",
         image: "images/img-4.jpg",
         title: "Lunch Image",
+        price: 150,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima eaque saepe vitae ipsa quis beatae asperiores, expedita nulla non veniam earum ratione?",
     },
     {
@@ -36,6 +40,7 @@ const menu = [{
         catagoey: "breakfast",
         image: "images/img-5.jpg",
         title: "breakfast Image",
+        price: 250,
         disription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident asperiores ipsa illum dolorem reiciendis optio ad dolores quos, quam iste.",
     },
     {
@@ -44,6 +49,7 @@ const menu = [{
         catagoey: "Dinner",
         image: "images/img-6.jpg",
         title: "Dinner Image",
+        price: 120,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam nostrum repudiandae voluptatibus ratione natus et, alias molestiae doloremque! Odio ex nulla sunt debitis eius facere? Doloribus a nulla quae.",
     },
     {
@@ -52,6 +58,7 @@ const menu = [{
         catagoey: "breakfast",
         image: "images/img-7.jpg",
         title: "breakfast Image",
+        price: 360,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti doloremque vitae, nesciunt maxime possimus dignissimos facere nam deserunt libero amet dolor. Ratione, ducimus quis",
     },
     {
@@ -60,6 +67,7 @@ const menu = [{
         catagoey: "Dinner",
         image: "images/img-8.jpg",
         title: "Dinner Image",
+        price: 100,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates modi quos et delectus fugit repellat eveniet. Eius, maxime quas?.",
     },
     {
@@ -68,6 +76,7 @@ const menu = [{
         catagoey: "breakfast",
         image: "images/img-9.jpg",
         title: "breakfast Image",
+        price: 290,
         disription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit, qui error quo dolor perspiciatis autem adipisci facilis et hic distinctio sed dicta ad laudantium esse ipsa! Necessitatibus, illo vero.",
     },
     {
@@ -76,6 +85,7 @@ const menu = [{
         catagoey: "dinner",
         image: "images/img-10.jpg",
         title: "DInner Image",
+        price: 180,
         disription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium officiis odio beatae atque tempora consequatur similique ducimus dolor, labore deleniti, itaque natus consectetur explicabo sapiente at?",
     },
 ];
