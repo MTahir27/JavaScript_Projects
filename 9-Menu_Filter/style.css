@@ -15,6 +15,16 @@ body {
     font-size: 1rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1.4;
+}
+
 main {
     padding: 20px;
 }
@@ -58,4 +68,8 @@ main {
 
 .product-detail .title .product-heading {
     color: var(--primarycolor);
+}
+
+.product-detail .title .price {
+    font-style: italic;
 }
