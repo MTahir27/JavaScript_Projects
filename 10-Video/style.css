@@ -48,7 +48,7 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
     position: fixed;
     bottom: 50px;
@@ -58,6 +58,7 @@ main h1 {
 .video-btns div {
     padding: 10px 20px;
     cursor: pointer;
+    color: #D8644F;
 }
 
 .video-btns .slide {
@@ -65,14 +66,12 @@ main h1 {
     background-color: #D8644F;
     width: 45%;
     height: 90%;
-    border-radius: 10px;
+    border-radius: 5px;
     left: 4px;
     cursor: default;
     transition: .5s all;
 }
 
-/* .active .slide {} */
-
-.active .slide {
+.stop .slide {
     left: 52%;
 }
