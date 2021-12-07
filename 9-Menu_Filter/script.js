@@ -119,7 +119,6 @@ function menuProducts(menuProductList) {
 btns.forEach(function (btn) {
     btn.onclick = function (e) {
         const catagoery = e.currentTarget.dataset.catagory;
-        console.log(catagoery);
         const catagoeyItems = menuData.filter(function (catagoeryItem) {
             if (catagoeryItem.catagoey === catagoery) {
                 return catagoeryItem;
