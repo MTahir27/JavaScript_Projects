@@ -25,6 +25,24 @@ p {
     line-height: 1.4;
 }
 
+.main-heading {
+    color: var(--black);
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 5px;
+    background-color: var(--primarycolor);
+}
+
 main {
     padding: 20px;
 }
