@@ -93,7 +93,11 @@ const menuData = [{
 ];
 
 window.addEventListener("DOMContentLoaded", function () {
-    let menu = menuData.map(function (item) {
+    menuProducts(menuData);
+});
+
+function menuProducts(menuProductList) {
+    let menu = menuProductList.map(function (item) {
         return `<div class="product">
         <div class="product-img">
             <img src=${item.image} alt=${item.title}>
@@ -110,4 +114,4 @@ window.addEventListener("DOMContentLoaded", function () {
     menu = menu.join('');
     menuContainer.innerHTML = menu;
     console.log(menu);
-});
+}
