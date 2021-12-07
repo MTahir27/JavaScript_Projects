@@ -42,3 +42,37 @@ main {
 main h1 {
     color: #fff;
 }
+
+.video-btns {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.video-btns div {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.video-btns .slide {
+    position: absolute;
+    background-color: #D8644F;
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+    left: 4px;
+    cursor: default;
+    transition: .5s all;
+}
+
+/* .active .slide {} */
+
+.active .slide {
+    left: 52%;
+}
