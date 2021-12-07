@@ -47,12 +47,36 @@ main {
     padding: 20px;
 }
 
+/* Button Styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    border: 1px solid var(--primarycolor);
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primarycolor);
+}
+
 .product {
     width: 100%;
     max-width: 400px;
     overflow: hidden;
     box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
-    margin: auto;
+    margin: 20px auto;
 }
 
 .product-img {
