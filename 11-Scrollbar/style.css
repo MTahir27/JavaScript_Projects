@@ -24,6 +24,17 @@ body {
     padding: 0px 20px;
 }
 
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.heading span {
+    color: var(--primarycolor);
+    text-decoration: underline;
+}
+
 /* Button Stying */
 .btn {
     padding: 10px 20px;
