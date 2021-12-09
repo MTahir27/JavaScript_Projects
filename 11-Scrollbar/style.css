@@ -19,6 +19,12 @@ body {
     background-color: var(--gray);
 }
 
+/* Container Styling */
+.container {
+    padding: 0px 20px;
+}
+
+/* Button Stying */
 .btn {
     padding: 10px 20px;
     cursor: pointer;
