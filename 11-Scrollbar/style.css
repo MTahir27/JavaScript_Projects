@@ -172,6 +172,23 @@ main {
     height: 100vh;
 }
 
+/* Footer Styling */
+footer {
+    background-color: rgb(41, 38, 38);
+    padding: 30px 0px;
+}
+
+footer .footer-tag {
+    text-align: center;
+    color: var(--white);
+    margin: 0px;
+}
+
+footer .footer-tag a {
+    color: var(--primarycolor);
+    font-weight: 500;
+}
+
 /* Madia Quries */
 @media (max-width: 776.98px) {
     .navbar {
