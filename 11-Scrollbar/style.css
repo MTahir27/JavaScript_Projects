@@ -9,6 +9,7 @@
     --white: #fff;
     --black: #000;
     --gray: #f9f9f9;
+    --tranparent: tranparent;
 }
 
 body {
@@ -16,6 +17,35 @@ body {
     line-height: 1.4;
     font-size: 1rem;
     background-color: var(--gray);
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    border: 1px dashed var(--primarycolor);
+}
+
+.btn-primary:hover {
+    background-color: var(--tansparent);
+
+}
+
+.btn-white {
+    color: var(--white);
+    border: 1px dashed var(--white);
+}
+
+.btn-white:hover {
+    color: var(--primarycolor);
+    background-color: var(--white);
+    border-color: var(--primarycolor);
 }
 
 
