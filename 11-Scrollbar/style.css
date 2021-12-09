@@ -140,6 +140,12 @@ main {
     color: var(--white);
 }
 
+.hero-section p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+}
+
 /* Hero Section End Here */
 
 /* Madia Quries */
