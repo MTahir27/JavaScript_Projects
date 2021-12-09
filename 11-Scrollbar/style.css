@@ -4,8 +4,42 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primarycolor: #D8644F;
+    --white: #fff;
+    --black: #000;
+    --gray: #f9f9f9;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
     font-size: 1rem;
+    background-color: var(--gray);
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--white);
+    padding: 10px 20px;
+}
+
+.logo {
+    max-width: 200px;
+    display: block;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.toggle-btn {
+    width: 30px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
