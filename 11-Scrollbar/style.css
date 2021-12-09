@@ -40,7 +40,7 @@ body {
 }
 
 .logo>img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .toggle-btn {
@@ -80,4 +80,30 @@ body {
 .navbar-nav .nav-item .nav-link:hover {
     color: var(--white);
     background-color: var(--primarycolor);
+}
+
+/* Madia Quries */
+@media (max-width: 776.98px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .nav-header {
+        padding: 10px 20px;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        justify-content: start;
+        padding-left: 25px;
+    }
 }
