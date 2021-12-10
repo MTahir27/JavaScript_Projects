@@ -213,6 +213,11 @@ footer .footer-tag a {
         flex-direction: column;
     }
 
+    .navbar .collapse {
+        height: 0px;
+        overflow: hidden;
+    }
+
     .navbar-nav .nav-item .nav-link {
         justify-content: start;
         padding-left: 25px;
