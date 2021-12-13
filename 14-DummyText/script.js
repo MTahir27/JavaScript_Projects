@@ -30,15 +30,21 @@ generate.onclick = (e) => {
 
     const paragraphAmount = parseInt(amount.value);
     const randomNumber = Math.floor(Math.random() * dummyText.length);
-
+    let TempArray = [];
     if (isNaN(paragraphAmount) || paragraphAmount < 1 || paragraphAmount > 9) {
         textSection.innerHTML = `<p>${dummyText[randomNumber]}</p>`;
     } else {
-        let tempArray = dummyText.slice(0, paragraphAmount);
-        tempArray = tempArray.map((item) => {
-            return `<p>${item}</p>`;
-        }.join(''));
-        textSection.innerHTML = `<p>${tempArray}</p>`;
+        // let tempArray = dummyText.slice(0, paragraphAmount);
+        // tempArray = tempArray.map((item) => {
+        //     return `<p>${item}</p>`;
+        // }).join('');
+        // textSection.innerHTML = `<p>${tempArray}</p>`;
+        for (let index = 0; index < paragraphAmount; index++) {
+            rendnum = Math.floor(Math.random() * dummyText.length);
+            dummyText[rendnum] = `<p>${dummyText[rendnum]}</p>`
+            TempArray.push(dummyText[rendnum]);
+        }
+        textSection.innerHTML = TempArray.join('');
     }
 
 
