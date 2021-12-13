@@ -33,6 +33,13 @@ generate.onclick = (e) => {
 
     if (isNaN(paragraphAmount) || paragraphAmount < 1 || paragraphAmount > 9) {
         textSection.innerHTML = `<p>${dummyText[randomNumber]}</p>`;
+    } else {
+        let tempArray = dummyText.slice(0, paragraphAmount);
+        tempArray = tempArray.map((item) => {
+            return `<p>${item}</p>`;
+        }.join(''));
+        textSection.innerHTML = `<p>${tempArray}</p>`;
     }
+
 
 }
