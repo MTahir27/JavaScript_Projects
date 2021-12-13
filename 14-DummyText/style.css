@@ -50,3 +50,13 @@ input[type=submit]:hover {
     background-color: transparent;
     color: #D8644F;
 }
+
+.text-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
