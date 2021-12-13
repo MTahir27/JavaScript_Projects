@@ -10,6 +10,7 @@
     --black: #000;
     --gray: #f9f9f9;
     --tranparent: tranparent;
+    --zero: 0px;
 }
 
 body {
@@ -194,7 +195,13 @@ footer .footer-tag a {
 }
 
 /* Madia Quries */
-@media (max-width: 776.98px) {
+@media (min-width: 776px) {
+    .navbar .collapse {
+        height: fit-content !important;
+    }
+}
+
+@media (max-width: 775.98px) {
     .navbar {
         flex-direction: column;
         gap: 0px;
@@ -209,13 +216,14 @@ footer .footer-tag a {
         display: block;
     }
 
-    .navbar-nav {
-        flex-direction: column;
+    .navbar .collapse {
+        height: var(--zero);
+        overflow: hidden;
     }
 
-    .navbar .collapse {
-        height: 0px;
-        overflow: hidden;
+    .navbar-nav {
+        flex-direction: column;
+        height: auto;
     }
 
     .navbar-nav .nav-item .nav-link {
