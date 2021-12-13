@@ -8,6 +8,7 @@ body {
     background-color: #f8f8f8;
     font-size: 1rem;
     color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -15,8 +16,9 @@ body {
     text-align: center;
 }
 
-.container h3 {
+.container h1 {
     margin: 40px auto 20px auto;
+
 }
 
 form label {
