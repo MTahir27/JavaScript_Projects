@@ -29,7 +29,7 @@ generate.onclick = (e) => {
     e.preventDefault();
 
     const paragraphAmount = parseInt(amount.value);
-    const randomNumber = Math.floor(Math.random() * dummyText.length);
+    let randomNumber = Math.floor(Math.random() * dummyText.length);
     let TempArray = [];
     if (isNaN(paragraphAmount) || paragraphAmount < 1 || paragraphAmount > 9) {
         textSection.innerHTML = `<p>${dummyText[randomNumber]}</p>`;
@@ -40,9 +40,21 @@ generate.onclick = (e) => {
         // }).join('');
         // textSection.innerHTML = `<p>${tempArray}</p>`;
         for (let index = 0; index < paragraphAmount; index++) {
-            rendnum = Math.floor(Math.random() * dummyText.length);
-            dummyText[rendnum] = `<p>${dummyText[rendnum]}</p>`
-            TempArray.push(dummyText[rendnum]);
+            // rendnum = Math.floor(Math.random() * dummyText.length);
+            // dummyText[rendnum] = `<p>${dummyText[rendnum]}</p>`
+            // TempArray.push(dummyText[rendnum]);
+            if (randomNumber < dummyText.length) {
+                dummyText[randomNumber] = `<p>${dummyText[randomNumber]}</p>`
+                TempArray.push(dummyText[randomNumber]);
+                console.log("Less : " + randomNumber);
+                randomNumber++;
+            } else {
+                randomNumber = 0;
+                dummyText[randomNumber] = `<p>${dummyText[randomNumber]}</p>`
+                TempArray.push(dummyText[randomNumber]);
+                console.log("Greater = " + randomNumber);
+                randomNumber++;
+            }
         }
         textSection.innerHTML = TempArray.join('');
     }
