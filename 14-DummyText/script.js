@@ -46,13 +46,11 @@ generate.onclick = (e) => {
             if (randomNumber < dummyText.length) {
                 dummyText[randomNumber] = `<p>${dummyText[randomNumber]}</p>`
                 TempArray.push(dummyText[randomNumber]);
-                console.log("Less : " + randomNumber);
                 randomNumber++;
             } else {
                 randomNumber = 0;
                 dummyText[randomNumber] = `<p>${dummyText[randomNumber]}</p>`
                 TempArray.push(dummyText[randomNumber]);
-                console.log("Greater = " + randomNumber);
                 randomNumber++;
             }
         }
