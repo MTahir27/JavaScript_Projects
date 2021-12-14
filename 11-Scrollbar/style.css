@@ -13,6 +13,10 @@
     --zero: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
@@ -121,6 +125,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar .collapse {
+    transition: all .3s linear;
 }
 
 .navbar-nav {
