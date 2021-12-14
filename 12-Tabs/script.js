@@ -1,7 +1,7 @@
 // Get All Constants
 const tabSection = document.querySelector(".tab-container");
 const tabBtns = document.querySelectorAll(".btns");
-const tabContent = document.querySelectorAll(".tab-data");
+const tabContents = document.querySelectorAll(".tab-data");
 
 // Select Id on Click
 tabSection.onclick = (e) => {
@@ -11,5 +11,11 @@ tabSection.onclick = (e) => {
             tabBtn.classList.remove("active");
             e.target.classList.add("active");
         });
+        const tabIds = document.getElementById(tabId);
+        tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("active");
+            tabIds.classList.add("active");
+        });
+
     }
 }
