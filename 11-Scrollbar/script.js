@@ -35,3 +35,12 @@ window.onscroll = () => {
         jumpBtn.style.display = "none";
     }
 }
+
+// Jump to Navbar Link
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach((navLink) => {
+    navLink.onclick = (e) => {
+        const linkId = e.currentTarget.getAttribute('href').slice(1);
+        console.log(linkId);
+    }
+});
