@@ -35,12 +35,31 @@ window.onscroll = () => {
         jumpBtn.style.display = "none";
     }
 }
+jumpBtn.onclick = () => {
+    window.scrollTo({
+        left: 0,
+        top: 0,
+    })
+}
 
 // Jump to Navbar Link
 const navLinks = document.querySelectorAll(".nav-link");
+const navbar = document.getElementById("navbar");
+const navbarHeight = navbar.offsetHeight;
+console.log(navbarHeight);
 navLinks.forEach((navLink) => {
     navLink.onclick = (e) => {
+        // Prevent Default
+        e.preventDefault();
         const linkId = e.currentTarget.getAttribute('href').slice(1);
         console.log(linkId);
+        // Get Id of Section
+        const linkSection = document.getElementById(linkId);
+        let position = linkSection.offsetTop;
+        window.scrollTo({
+            left: 0,
+            top: position - navbarHeight,
+        });
+
     }
 });
