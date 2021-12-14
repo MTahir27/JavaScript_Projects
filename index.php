@@ -45,7 +45,10 @@
             <a href="11-Scrollbar">Scrollbar</a>
         </li>
         <li>
-            <a href="14-DummyText/">Dummy Text</a>
+            <a href="12-Tabs">Tabs</a>
+        </li>
+        <li>
+            <a href="14-DummyText">Dummy Text</a>
         </li>
     </ol>
 </body>
