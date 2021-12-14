@@ -45,7 +45,7 @@ jumpBtn.onclick = () => {
 // Jump to Navbar Link
 const navLinks = document.querySelectorAll(".nav-link");
 const navbar = document.getElementById("navbar");
-const navbarHeight = navbar.offsetHeight;
+const navbarHeight = navbar.getBoundingClientRect().height;
 console.log(navbarHeight);
 navLinks.forEach((navLink) => {
     navLink.onclick = (e) => {
@@ -56,10 +56,11 @@ navLinks.forEach((navLink) => {
         // Get Id of Section
         const linkSection = document.getElementById(linkId);
         let position = linkSection.offsetTop;
+        // Go to spoted Section
         window.scrollTo({
             left: 0,
             top: position - navbarHeight,
         });
-
+        collaspe.style.height = `0px`;
     }
 });
