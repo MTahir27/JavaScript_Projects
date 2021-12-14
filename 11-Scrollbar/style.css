@@ -193,6 +193,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+    transform: all 0.3s linear;
 }
 
 #topBtn>img {

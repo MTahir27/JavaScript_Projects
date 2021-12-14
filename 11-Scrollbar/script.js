@@ -24,3 +24,14 @@ toggleBtn.onclick = function () {
         collaspe.style.height = `0px`;
     }
 };
+
+// Jump to top button
+const jumpBtn = document.getElementById("topBtn");
+window.onscroll = () => {
+    const pageHeight = window.pageYOffset;
+    if (pageHeight > 500) {
+        jumpBtn.style.display = "block";
+    } else {
+        jumpBtn.style.display = "none";
+    }
+}
