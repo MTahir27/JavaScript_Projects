@@ -197,7 +197,7 @@ footer .footer-tag a {
 /* Madia Quries */
 @media (min-width: 776px) {
     .navbar .collapse {
-        height: fit-content !important;
+        height: auto !important;
     }
 }
 
