@@ -9,7 +9,7 @@ const endDate = document.querySelector('.end-time');
 const timer = document.querySelectorAll('.date h1');
 console.log(timer);
 
-const saleDate = new Date(2021, 27, 27, 12, 1, 00);
+const saleDate = new Date(2021, 11, 16, 12, 00);
 // Get Year
 const year = saleDate.getFullYear();
 // Get Month
@@ -33,7 +33,7 @@ if (minutes <= 9) {
 endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minutes} AM`;
 
 
-// Temaining Time
+// Remaining Time
 const endTime = saleDate.getTime();
 const currentTime = new Date().getTime();
 let remainingTime = endTime - currentTime;
@@ -44,3 +44,9 @@ const oneSecond = 1000;
 const oneMinute = 60 * oneSecond;
 const oneHour = 60 * oneMinute;
 const oneDay = 24 * oneHour;
+
+
+// Calculate Remaining Time
+const days = Math.floor(remainingTime / oneDay);
+console.log(days);
+const dayText = document.querySelector(".day").innerHTML = days;
