@@ -102,3 +102,10 @@ main {
     text-transform: uppercase;
     font-size: .8rem;
 }
+
+@media (max-width: 776px) {
+    .product {
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
