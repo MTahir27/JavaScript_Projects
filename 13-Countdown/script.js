@@ -29,7 +29,7 @@ if (minute <= 9) {
 }
 
 
-endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minute} AM`;
+endDate.innerHTML = `End on ${day}, ${date} ${month} ${year} , ${hour}:${minute} AM`;
 
 
 // Miliseconds in one day & hour & minute & seconds

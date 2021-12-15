@@ -80,6 +80,7 @@ main {
     align-items: stretch;
     gap: 5px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .date {
@@ -89,6 +90,7 @@ main {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    flex: 1;
 }
 
 .date h1 {
