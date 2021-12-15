@@ -57,3 +57,6 @@ const hourText = document.querySelector(".hour").innerHTML = hours;
 // Calculate Minutes
 const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
 const minuteText = document.querySelector(".minute").innerHTML = minutes;
+// Calculate Seconds
+const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
+const secondText = document.querySelector(".second").innerHTML = seconds;
