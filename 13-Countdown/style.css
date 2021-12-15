@@ -103,6 +103,10 @@ main {
     font-size: .8rem;
 }
 
+.expireTime {
+    color: var(--primarycolor);
+}
+
 @media (max-width: 776px) {
     .product {
         flex-direction: column;

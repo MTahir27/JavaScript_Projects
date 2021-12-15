@@ -7,9 +7,8 @@ const dayName = [
 ];
 const endDate = document.querySelector('.end-time');
 const timer = document.querySelectorAll('.date h1');
-console.log(timer);
 
-const saleDate = new Date(2021, 11, 16, 12, 00);
+const saleDate = new Date(2022, 11, 16, 12, 00);
 // Get Year
 const year = saleDate.getFullYear();
 // Get Month
@@ -44,27 +43,32 @@ const endTime = saleDate.getTime();
 const calculateTime = () => {
     const currentTime = new Date().getTime();
     let remainingTime = endTime - currentTime;
+    if (remainingTime >= 0) {
+        // Calculate Remaining Time
 
-    // Calculate Remaining Time
+        // Calculate day
+        const days = Math.floor(remainingTime / oneDay);
+        // Claculate Hours
+        const hours = Math.floor((remainingTime % oneDay) / oneHour);
+        // Calculate Minutes
+        const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
+        // Calculate Seconds
+        const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
 
-    // Calculate day
-    const days = Math.floor(remainingTime / oneDay);
-    // Claculate Hours
-    const hours = Math.floor((remainingTime % oneDay) / oneHour);
-    // Calculate Minutes
-    const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
-    // Calculate Seconds
-    const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
+        const time = [days, hours, minutes, seconds];
+        timer.forEach((timerText, index) => {
+            if (time[index] <= 9) {
+                time[index] = `0${time[index]}`;
+            } else {
+                time[index];
+            }
+            timerText.innerHTML = time[index];
+        });
 
-    const time = [days, hours, minutes, seconds];
-    timer.forEach((timerText, index) => {
-        if (time[index] <= 9) {
-            time[index] = `0${time[index]}`;
-        } else {
-            time[index];
-        }
-        timerText.innerHTML = time[index];
-    });
+    } else {
+        const expiretime = document.querySelector('.date-container').innerHTML = `<h3 class="expireTime">Time Expire</h3>`;
+    }
+
 
 
 }
