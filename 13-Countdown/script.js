@@ -33,30 +33,31 @@ if (minute <= 9) {
 endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minute} AM`;
 
 
-// Remaining Time
-const endTime = saleDate.getTime();
-const currentTime = new Date().getTime();
-let remainingTime = endTime - currentTime;
-console.log(remainingTime);
-
 // Miliseconds in one day & hour & minute & seconds
 const oneSecond = 1000;
 const oneMinute = 60 * oneSecond;
 const oneHour = 60 * oneMinute;
 const oneDay = 24 * oneHour;
 
+// Remaining Time
+const endTime = saleDate.getTime();
+const calculateTime = () => {
+    const currentTime = new Date().getTime();
+    let remainingTime = endTime - currentTime;
 
-// Calculate Remaining Time
+    // Calculate Remaining Time
 
-// Calcuaate day
-const days = Math.floor(remainingTime / oneDay);
-const dayText = document.querySelector(".day").innerHTML = days;
-// Claculate Hours
-const hours = Math.floor((remainingTime % oneDay) / oneHour);
-const hourText = document.querySelector(".hour").innerHTML = hours;
-// Calculate Minutes
-const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
-const minuteText = document.querySelector(".minute").innerHTML = minutes;
-// Calculate Seconds
-const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
-const secondText = document.querySelector(".second").innerHTML = seconds;
+    // Calculate day
+    const days = Math.floor(remainingTime / oneDay);
+    const dayText = document.querySelector(".day").innerHTML = days;
+    // Claculate Hours
+    const hours = Math.floor((remainingTime % oneDay) / oneHour);
+    const hourText = document.querySelector(".hour").innerHTML = hours;
+    // Calculate Minutes
+    const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
+    const minuteText = document.querySelector(".minute").innerHTML = minutes;
+    // Calculate Seconds
+    const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
+    const secondText = document.querySelector(".second").innerHTML = seconds;
+}
+calculateTime();
