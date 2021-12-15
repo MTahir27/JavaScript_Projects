@@ -60,4 +60,6 @@ const calculateTime = () => {
     const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
     const secondText = document.querySelector(".second").innerHTML = seconds;
 }
+
+let countdown = setInterval(calculateTime, 1000);
 calculateTime();
