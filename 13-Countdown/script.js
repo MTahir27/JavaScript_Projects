@@ -47,6 +47,11 @@ const oneDay = 24 * oneHour;
 
 
 // Calculate Remaining Time
+
+// Calcuaate day
 const days = Math.floor(remainingTime / oneDay);
 console.log(days);
 const dayText = document.querySelector(".day").innerHTML = days;
+// Claculate Hours
+const hours = Math.floor(remainingTime / oneHour);
+const hourText = document.querySelector(".hour").innerHTML = hours;
