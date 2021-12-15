@@ -58,9 +58,15 @@ const calculateTime = () => {
 
     const time = [days, hours, minutes, seconds];
     timer.forEach((timerText, index) => {
-        const time = [days, hours, minutes, seconds];
+        if (time[index] <= 9) {
+            time[index] = `0${time[index]}`;
+        } else {
+            time[index];
+        }
         timerText.innerHTML = time[index];
-    })
+    });
+
+
 }
 
 let countdown = setInterval(calculateTime, 1000);
