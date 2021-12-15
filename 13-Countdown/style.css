@@ -10,6 +10,22 @@ body {
     color: #2e2e2e;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin: 50px 20px;
+
+}
 
 .product-img {
     width: 100%;
