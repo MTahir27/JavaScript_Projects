@@ -49,16 +49,18 @@ const calculateTime = () => {
 
     // Calculate day
     const days = Math.floor(remainingTime / oneDay);
-    const dayText = document.querySelector(".day").innerHTML = days;
     // Claculate Hours
     const hours = Math.floor((remainingTime % oneDay) / oneHour);
-    const hourText = document.querySelector(".hour").innerHTML = hours;
     // Calculate Minutes
     const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
-    const minuteText = document.querySelector(".minute").innerHTML = minutes;
     // Calculate Seconds
     const seconds = Math.floor((remainingTime % oneMinute) / oneSecond);
-    const secondText = document.querySelector(".second").innerHTML = seconds;
+
+    const time = [days, hours, minutes, seconds];
+    timer.forEach((timerText, index) => {
+        const time = [days, hours, minutes, seconds];
+        timerText.innerHTML = time[index];
+    })
 }
 
 let countdown = setInterval(calculateTime, 1000);
