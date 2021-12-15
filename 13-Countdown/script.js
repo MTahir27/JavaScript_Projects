@@ -31,3 +31,10 @@ if (minutes <= 9) {
 
 
 endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minutes} AM`;
+
+
+// Temaining Time
+const endTime = saleDate.getTime();
+const currentTime = new Date().getTime();
+let remainingTime = endTime - currentTime;
+console.log(remainingTime);
