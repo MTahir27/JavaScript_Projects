@@ -38,3 +38,9 @@ const endTime = saleDate.getTime();
 const currentTime = new Date().getTime();
 let remainingTime = endTime - currentTime;
 console.log(remainingTime);
+
+// Miliseconds in one day & hour & minute & seconds
+const oneSecond = 1000;
+const oneMinute = 60 * oneSecond;
+const oneHour = 60 * oneMinute;
+const oneDay = 24 * oneHour;
