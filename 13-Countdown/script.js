@@ -24,13 +24,13 @@ const day = dayName[saleDate.getDay()];
 // Get Hour
 const hour = saleDate.getHours();
 // Get Minutes
-let minutes = saleDate.getMinutes();
-if (minutes <= 9) {
-    minutes = "0" + minutes;
+let minute = saleDate.getMinutes();
+if (minute <= 9) {
+    minute = "0" + minute;
 }
 
 
-endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minutes} AM`;
+endDate.innerHTML = `End on ${day} ${date} ${month} ${year} , ${hour}:${minute} AM`;
 
 
 // Remaining Time
@@ -50,8 +50,10 @@ const oneDay = 24 * oneHour;
 
 // Calcuaate day
 const days = Math.floor(remainingTime / oneDay);
-console.log(days);
 const dayText = document.querySelector(".day").innerHTML = days;
 // Claculate Hours
-const hours = Math.floor(remainingTime / oneHour);
+const hours = Math.floor((remainingTime % oneDay) / oneHour);
 const hourText = document.querySelector(".hour").innerHTML = hours;
+// Calculate Minutes
+const minutes = Math.floor((remainingTime % oneHour) / oneMinute);
+const minuteText = document.querySelector(".minute").innerHTML = minutes;
