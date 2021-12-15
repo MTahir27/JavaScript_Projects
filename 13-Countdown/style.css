@@ -4,11 +4,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primarycolor: #D8644F;
+    --white: #fff;
+    --black: #2e2e2e;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
 body {
     background-color: #f8f8f8;
     font-size: 1rem;
-    color: #2e2e2e;
+    color: var(--black);
     font-family: 'Ubuntu', sans-serif;
+    line-height: 1.4;
 }
 
 main {
@@ -50,4 +61,13 @@ main {
     max-width: 400px;
     box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
     padding: 20px;
+}
+
+.product-detail h1 {
+    margin-bottom: 10px;
+}
+
+.product-detail .end-time {
+    color: var(--primarycolor);
+    margin-bottom: 5px;
 }
