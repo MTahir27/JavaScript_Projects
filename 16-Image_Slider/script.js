@@ -16,22 +16,41 @@ slides.forEach((slide, index) => {
 let behaviour = 0;
 defaultBtn.onclick = () => {
     behaviour = 0;
-    console.log(behaviour);
 }
 loop.onclick = () => {
     behaviour = 1;
-    console.log(behaviour);
 }
 let count = 0;
 nextbtn.onclick = () => {
-    if (count < slides.length - 1) {
-        count++;
+    if (behaviour == 0) {
+        if (count < slides.length - 1) {
+            count++;
+            console.log(behaviour);
+        }
+    } else {
+        if (count < slides.length - 1) {
+            count++;
+            console.log(behaviour);
+        } else {
+            count = 0;
+        }
     }
+
     move();
 }
 prevbtn.onclick = () => {
-    if (count > 0) {
-        count--;
+    if (behaviour == 0) {
+        if (count > 0) {
+            count--;
+            console.log(behaviour);
+        }
+    } else {
+        if (count > 0) {
+            count--;
+            console.log(behaviour);
+        } else {
+            count = slides.length - 1;
+        }
     }
     move();
 }
