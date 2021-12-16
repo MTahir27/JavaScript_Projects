@@ -6,6 +6,23 @@ const nextbtn = document.querySelector(".nextBtn");
 // Functionality Btn
 const defaultBtn = document.querySelector(".default");
 const loop = document.querySelector(".loop");
+const scrollTypes = document.querySelectorAll(".scrollType");
+
+// Active Btn
+
+defaultBtn.addEventListener("click", () => {
+    scrollTypes.forEach((scrollType) => {
+        scrollType.classList.remove("active");
+    });
+    defaultBtn.classList.add("active");
+})
+
+loop.addEventListener("click", () => {
+    scrollTypes.forEach((scrollType) => {
+        scrollType.classList.remove("active");
+    });
+    loop.classList.add("active");
+})
 
 
 slides.forEach((slide, index) => {
@@ -22,23 +39,22 @@ loop.onclick = () => {
 }
 let count = 0;
 nextbtn.onclick = () => {
+    // Check Behavour isDefault or Loop
     if (behaviour == 0) {
         if (count < slides.length - 1) {
             count++;
-            console.log(behaviour);
         }
     } else {
         if (count < slides.length - 1) {
             count++;
-            console.log(behaviour);
         } else {
             count = 0;
         }
     }
-
     move();
 }
 prevbtn.onclick = () => {
+    // Check Behavour isDefault or Loop
     if (behaviour == 0) {
         if (count > 0) {
             count--;
