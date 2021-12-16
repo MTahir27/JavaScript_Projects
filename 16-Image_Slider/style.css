@@ -15,4 +15,83 @@ body {
     font-size: 1rem;
     color: var(--black);
     line-height: 1.4;
+    background-color: var(--white);
+}
+
+
+.container {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.sliderContainer {
+    width: 100%;
+    height: 300px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 20%);
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primarycolor);
+    background-color: var(--white);
+}
+
+.slide:first-child {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.slide:nth-child(2) {
+    background-color: cadetblue;
+    color: var(--white);
+}
+
+.slide:nth-child(3) {
+    background-color: aquamarine;
+    color: var(--primarycolor);
+}
+
+.slide:nth-child(4) {
+    background-color: yellowgreen;
+    color: var(--white);
+}
+
+.slide:last-child {
+    background-color: var(--primarycolor);
+    color: var(--white);
+}
+
+/* Button Styling */
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    border: 1px solid var(--primarycolor);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--primarycolor);
 }
