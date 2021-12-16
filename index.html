@@ -53,6 +53,9 @@
         <li>
             <a href="14-DummyText">Dummy Text</a>
         </li>
+        <li>
+            <a href="16-Image_Slider">Image Slider</a>
+        </li>
     </ol>
 </body>
 
