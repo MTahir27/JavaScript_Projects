@@ -3,3 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+:root {
+    --primarycolor: #D8644F;
+    --white: #f9f9f9;
+    --black: #2e2e2e;
+}
+
+body {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.4;
+}
