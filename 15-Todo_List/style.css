@@ -11,6 +11,18 @@
 
 }
 
+/* Text Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin-bottom: 0px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -75,4 +87,19 @@ body {
     padding: 20px;
     border-radius: 5px;
     max-width: 450px;
+}
+
+.section h1 {
+    text-align: center;
+    color: var(--primarycolor);
+    margin-bottom: 10px;
+}
+
+.alert {
+    text-align: center;
+    background-color: rgb(0 0 0 / 10%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    padding-top: 2px;
+    margin-bottom: 10px;
 }
