@@ -54,6 +54,9 @@
             <a href="14-DummyText">Dummy Text</a>
         </li>
         <li>
+            <a href="15-Todo_List">Todo List</a>
+        </li>
+        <li>
             <a href="16-Image_Slider">Image Slider</a>
         </li>
     </ol>
