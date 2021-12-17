@@ -128,10 +128,14 @@ body {
     outline: none;
     padding: 5px 10px;
     font-size: 1rem;
-    border: 1px solid #adb5bd;
+    border: 1px solid rgb(173 181 189 / 50%);
 }
 
 /* TodoList Styling */
+.todo-container {
+    padding: 10px 0px;
+}
+
 .todo-list {
     display: flex;
     justify-content: space-between;
