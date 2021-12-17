@@ -13,13 +13,25 @@ todoForm.onsubmit = (e) => {
 const todoInputFunction = () => {
     const todoValue = todoInput.value;
     if (todoValue !== '') {
+        // Create todo List
         const todoList = document.createElement('div');
         todoList.classList.add("todo-list");
+        // Create todoItem
         const todoItem = document.createElement('p');
         todoItem.classList.add("todo-item");
         todoList.appendChild(todoItem);
         todoItem.textContent = todoValue;
         console.log(todoList);
+        // TodoItem Button
+        const todoItemBtns = document.createElement("div");
+        todoItemBtns.classList.add("btn-container");
+        todoItemBtns.innerHTML = `<button class="edit-btn icon-btn">
+        <img src="images/edit.png" alt="Edit Img">
+    </button>
+    <button class="delete-btn icon-btn">
+        <img src="images/delete.png" alt="Delete Img">
+    </button>`;
+        todoList.appendChild(todoItemBtns);
     } else {
         // alert.innerText = "Please Enter value";
         alertFunction("Please Enter Value", "danger");
