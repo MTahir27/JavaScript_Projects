@@ -130,3 +130,19 @@ body {
     font-size: 1rem;
     border: 1px solid #adb5bd;
 }
+
+/* TodoList Styling */
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(216 100 79 / 5%);
+    background-color: rgb(216 100 79 / 10%);
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 4px;
+}
+
+.todo-list:hover {
+    background-color: rgb(216 100 79 / 15%);
+}
