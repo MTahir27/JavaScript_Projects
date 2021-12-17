@@ -1,6 +1,7 @@
 // Calling Elements
 const alert = document.querySelector(".alert");
 const todoForm = document.querySelector(".todo-form");
+const todoContainer = document.querySelector(".todo-container");
 const todoInput = document.querySelector(".input-list");
 const submitBtn = document.querySelector('.submit-btn');
 const clear = document.querySelector(".clear");
@@ -11,11 +12,19 @@ todoForm.onsubmit = (e) => {
     todoInputFunction();
 }
 const todoInputFunction = () => {
+    const todoId = new Date().getTime().toString();
+    console.log(todoId);
     const todoValue = todoInput.value;
     if (todoValue !== '') {
         // Create todo List
         const todoList = document.createElement('div');
         todoList.classList.add("todo-list");
+        // TodoList ID
+        const attr = document.createAttribute("data-id");
+        attr.value = todoId;
+        todoList.setAttributeNode(attr);
+
+
         // Create todoItem
         const todoItem = document.createElement('p');
         todoItem.classList.add("todo-item");
@@ -32,6 +41,8 @@ const todoInputFunction = () => {
         <img src="images/delete.png" alt="Delete Img">
     </button>`;
         todoList.appendChild(todoItemBtns);
+        // Show TodoItem in TodoContainer
+        todoContainer.appendChild(todoList);
     } else {
         // alert.innerText = "Please Enter value";
         alertFunction("Please Enter Value", "danger");
