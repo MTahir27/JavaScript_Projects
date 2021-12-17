@@ -34,11 +34,12 @@ body {
 .btn {
     background-color: var(--primarycolor);
     color: var(--white);
-    font-weight: 500;
-    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: uppercase;
     border: 1px dashed var(--primarycolor);
     cursor: pointer;
     transition: .1s all ease-in-out;
+    padding: 10px 20px;
 }
 
 .btn:hover {
@@ -114,4 +115,18 @@ body {
     color: #dc3545;
     background-color: rgb(220 53 69 / 20%);
     border-color: rgb(220 53 69 / 25%);
+}
+
+/* Todo Form Styling */
+.todo-form {
+    width: 100%;
+    display: flex;
+}
+
+.todo-form .input-list {
+    flex: 1;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #adb5bd;
 }
