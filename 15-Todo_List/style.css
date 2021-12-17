@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primarycolor: #D8644F;
+    --white: #f9f9f9;
+    --black: #2e2e2e;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px dashed var(--primarycolor);
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--primarycolor);
 }
