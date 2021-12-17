@@ -13,7 +13,13 @@ todoForm.onsubmit = (e) => {
 const todoInputFunction = () => {
     const todoValue = todoInput.value;
     if (todoValue !== '') {
-        console.log("Value Exist");
+        const todoList = document.createElement('div');
+        todoList.classList.add("todo-list");
+        const todoItem = document.createElement('p');
+        todoItem.classList.add("todo-item");
+        todoList.appendChild(todoItem);
+        todoItem.textContent = todoValue;
+        console.log(todoList);
     } else {
         // alert.innerText = "Please Enter value";
         alertFunction("Please Enter Value", "danger");
