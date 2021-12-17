@@ -80,12 +80,13 @@ const clearbtnFunction = () => {
     // Check Todo List Exist
     if (todoListExist === "True") {
         // Run only if Clear Button Not Exist
+        const clear = document.querySelector(".clear");
         if (!clear) {
             const clearBtn = document.createElement("button");
             clearBtn.classList.add("clear");
             clearBtn.textContent = "Clear all item";
             todoSection.appendChild(clearBtn);
-            console.log("CLear Exist: " + clearBtn.classList.contains("clear"));
+            // console.log("CLear Exist: " + clearBtn.classList.contains("clear"));
         }
         // console.log("Check Todo List " + todoListExist);
     } else {
