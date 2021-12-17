@@ -122,7 +122,8 @@ body {
 }
 
 .todo-form .input-list {
-    flex: 1;
+    /* flex: 1; */
+    width: 100%;
     outline: none;
     padding: 5px 10px;
     font-size: 1rem;
@@ -159,10 +160,9 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-transform: capitalize;
-    display: inline-block;
+    display: block;
     border: 1px solid rgb(216 100 79 / 10%);
     font-size: 1rem;
-    transform: translateX(100%);
 }
 
 .clear:hover {

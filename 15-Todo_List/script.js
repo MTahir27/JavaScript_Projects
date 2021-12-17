@@ -32,7 +32,6 @@ const todoInputFunction = () => {
         attr.value = todoId;
         todoList.setAttributeNode(attr);
 
-
         // Create todoItem
         const todoItem = document.createElement('p');
         todoItem.classList.add("todo-item");
