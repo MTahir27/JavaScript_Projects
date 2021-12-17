@@ -146,3 +146,25 @@ body {
 .todo-list:hover {
     background-color: rgb(216 100 79 / 15%);
 }
+
+.clear {
+    text-align: center;
+    background-color: rgb(216 100 79 / 10%);
+    padding: 7px 20px;
+    width: fit-content;
+    margin: auto;
+    color: var(--primarycolor);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    border: 1px solid rgb(216 100 79 / 10%);
+    font-size: 1rem;
+    transform: translateX(100%);
+}
+
+.clear:hover {
+    background-color: var(--white);
+    color: var(--primarycolor);
+    border-color: rgb(216 100 79 / 50%);
+}
