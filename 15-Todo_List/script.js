@@ -2,6 +2,8 @@
 const alert = document.querySelector(".alert");
 const todoForm = document.querySelector(".todo-form");
 const todoContainer = document.querySelector(".todo-container");
+const todoSection = document.querySelector(".todoSection");
+
 const todoInput = document.querySelector(".input-list");
 const submitBtn = document.querySelector('.submit-btn');
 const clear = document.querySelector(".clear");
@@ -11,6 +13,11 @@ todoForm.onsubmit = (e) => {
     e.preventDefault();
     todoInputFunction();
 }
+
+// Check Conditions
+let createButton = "False";
+let todoListExist = "False";
+
 const todoInputFunction = () => {
     const todoId = new Date().getTime().toString();
     console.log(todoId);
@@ -19,6 +26,7 @@ const todoInputFunction = () => {
         // Create todo List
         const todoList = document.createElement('div');
         todoList.classList.add("todo-list");
+
         // TodoList ID
         const attr = document.createAttribute("data-id");
         attr.value = todoId;
@@ -41,12 +49,18 @@ const todoInputFunction = () => {
         <img src="images/delete.png" alt="Delete Img">
     </button>`;
         todoList.appendChild(todoItemBtns);
+
         // Show TodoItem in TodoContainer
         todoContainer.appendChild(todoList);
+
+        todoListExist = "True";
+
     } else {
-        // alert.innerText = "Please Enter value";
         alertFunction("Please Enter Value", "danger");
     }
+
+    // ClearButton FUnction
+    clearbtnFunction();
 }
 
 // Alert Function
@@ -60,4 +74,22 @@ const alertFunction = (message, type) => {
             alert.classList.remove(`alert-${type}`);
         }, 1000
     );
+}
+
+// Clear Button Function
+const clearbtnFunction = () => {
+    // Check Todo List Exist
+    if (todoListExist === "True") {
+        // Run only if Clear Button Not Exist
+        if (!clear) {
+            const clearBtn = document.createElement("button");
+            clearBtn.classList.add("clear");
+            clearBtn.textContent = "Clear all item";
+            todoSection.appendChild(clearBtn);
+            console.log("CLear Exist: " + clearBtn.classList.contains("clear"));
+        }
+        // console.log("Check Todo List " + todoListExist);
+    } else {
+        // console.log("Check Todo List " + todoListExist);
+    }
 }
